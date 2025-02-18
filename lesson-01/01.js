@@ -2,4 +2,13 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 0;
+let day = 1;
+
+while (day <= 20) {
+    sum += day;
+    day++;
+}
+
+console.log(sum)
+
