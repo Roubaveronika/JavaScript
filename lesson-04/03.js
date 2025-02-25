@@ -20,7 +20,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 function findCommonElements(array1, array2) {
 let result = [];
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array1.length; i++) {
         if (includesElement(array2, array1[i])) {
             if (!includesElement(result, array1[i])) {
             result.push(array1[i]);
@@ -30,3 +30,4 @@ let result = [];
     return result;
 }
 console.log(findCommonElements([1, 2, 3], [2, 3, 4]))
+
