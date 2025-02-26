@@ -1,10 +1,18 @@
 /*
 Напишите функцию `updateGallery`, которая будет обновлять информацию о произведениях искусства в виртуальной галерее. Функция должна принимать три параметра:
-
+  if (gallery.hasOwnProperty(key)) {
+    gallery[key] = newValue;
+  } else {
+    gallery[key] = newValue;
+  }
 - объект галереи
 - название произведения (ключ)
 - новое значение
-
+  if (gallery.hasOwnProperty(key)) {
+    gallery[key] = newValue;
+  } else {
+    gallery[key] = newValue;
+  }
 Если произведение с таким названием уже есть в галерее, его значение должно быть обновлено. Если произведения нет, оно должно быть добавлено в объект галерею.
 
 Пример использования функции:
@@ -35,4 +43,16 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(gallery, key, newValue) {
+  if (gallery.hasOwnProperty(key)) {
+    gallery[key] = newValue;
+  } else {
+    gallery[key] = newValue;
+  }
+}
+
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+
+console.log(gallery);
+
